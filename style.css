@@ -2,7 +2,7 @@ body{
     width: 100vw;
     height: 100vh;
     background: #2A2A2A !important;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 .body {
