@@ -320,11 +320,7 @@ animation: texanim 6s infinite linear;
 color: #fff;
 }
 
-.lorem::selection {
-background-color: #ffb623;
-}
-
-br::selection {
+*::selection {
 background-color: #ffb623;
 }
 
