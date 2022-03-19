@@ -1,1196 +1,642 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-
-    <!-- Basic Page Needs
-    ================================================== -->
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!--
+     - Roxy: Bootstrap template by GettTemplates.com
+     - https://gettemplates.co/roxy
+    -->
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Roxy by GetTemplates.co</title>
+    <meta name="description" content="Roxy">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Pixel Perfect Portfolio</title>
-
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <meta name="keywords" content="">
-
-    <!-- Mobile Specific Metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
-    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/select2/select2.min.css">
+    <link rel="stylesheet" href="vendor/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="vendor/lightcase/lightcase.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Varela" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
 
-    <!-- Favicon
-    ================================================== -->
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
-    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico">
-    <link rel="manifest" href="assets/img/manifest.json">
-    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <!-- Stylesheets
-    ================================================== -->
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-
-    <!-- Font Awesome core CSS -->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <!-- Modernizr JS for IE8 support of HTML5 elements and media queries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+	<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-white" href="/">
+            <h3 class="font-weight-bolder mb-0">ROXY</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a id="side-search-open" class="nav-link" href="#">
+                        <span class="lnr lnr-magnifier"></span>
+                    </a>
+                </li>
+                 <li class="nav-item only-desktop">
+                    <a class="nav-link" id="side-nav-open" href="#">
+                        <span class="lnr lnr-menu"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-    <!-- Hero Section, Background Image change in css -->
-    <div id="top" class="hero background-overlay">
-    
-        <!-- Name & Description -->
-        <div class="hero-content">
-            <h1>I am John Smith</h1>
-            <p class="hero-job"><span>I'M A CREATIVE WEB DEVELOPER</span></p>
-            <p class="hero-job-desc">I STAND ON A SWEET SPOT WHERE DESIGN &amp; CODE INTERSECTS. </p>
+<div id="side-nav" class="sidenav">
+	<a href="javascript:void(0)" id="side-nav-close">&times;</a>
+	
+	<div class="sidenav-content">
+		<p>
+			Kuncen WB1, Wirobrajan 10010, DIY
+		</p>
+		<p>
+			<span class="fs-16 primary-color">(+68) 120034509</span>
+		</p>
+		<p>info@yourdomain.com</p>
+	</div>
+</div><div id="side-search" class="sidenav">
+	<a href="javascript:void(0)" id="side-search-close">&times;</a>
+	<div class="sidenav-content">
+		<form action="">
 
-        </div><!-- /.hero-content -->
-
-        <div class="hero-arrow page-scroll home-arrow-down">
-            <a class="" href="#intro"><i class="fa fa-angle-double-down" aria-hidden="true"></i></a>
-        </div><!-- /.hero-arrow -->
-
-    </div><!-- /.hero -->
-    <!-- End Hero -->
-
-    <!-- Header -->
-    <header id="masthead" class="site-header">
-        <nav id="primary-navigation" class="site-navigation" data-spy="affix">
-            <div class="container">
-                <div class="navbar-header page-scroll">
-
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#portfolio-perfect-collapse" aria-expanded="false" >
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    
-                    <!-- Name -->
-                    <div class="page-scroll site-logo">
-                        <a href="#top">John</a>
-                    </div>
-
-                </div><!-- /.navbar-header -->
-
-                <div class="main-menu collapse navbar-collapse" id="portfolio-perfect-collapse">
-
-                    <!-- Navigation -->
-                    <ul class="nav navbar-nav navbar-right">
-
-                        <li class="page-scroll"><a href="#top">Home</a></li>
-                        <li class="page-scroll"><a href="#intro">Intro</a></li>
-                        <li class="page-scroll"><a href="#about">About</a></li>
-                        <li class="page-scroll"><a href="#services">Services</a></li>
-                        <li class="page-scroll"><a href="#team">Team</a></li>
-                        <li class="page-scroll"><a href="#history">History</a></li>
-                        <li class="page-scroll"><a href="#works">Works</a></li>
-                        <li class="page-scroll"><a href="#contact">Contact</a></li>
-                        
-                    </ul><!-- /.navbar-nav -->
-
-                </div><!-- /.navbar-collapse -->
-            </div>
-        </nav><!-- /.primary-navigation -->
-    </header><!-- /#header -->
-    <!-- End Header -->
-
-    <!-- Main content -->
-    <main id="main" class="site-main">
-
-        <!-- Hello section -->
-		<section class="site-section section-hello" id="intro">
-			<div class="container">
-				<h2>HELLO &amp; WELCOME</h2>
-				<p class="section-subtitle"><span>EXPLORE OUR WORLD</span></p>
-				<div class="row">
-					<div class="col-sm-4">
-						<div class="main-service text-right">
-							<div class="rectangle">
-								<i class="fa fa-calendar" aria-hidden="true"></i>
-							</div><!-- /.rectangle -->
-							<h3>We Meet Deadlines</h3>
-							<p>Your deadline is the most important value for us. Our job is to make sure the job is done perfectly before the deadline.</p>
-						</div><!-- /.main-service -->
-                        <div class="main-service text-right">
-                            <div class="rectangle">
-                                <i class="fa fa-comments" aria-hidden="true"></i>
-                            </div>
-                            <h3>Communication Is Key</h3>
-                            <p>Our team is available to check on your questions and take in feedback as soon as possibly.</p>
-                        </div><!-- /.main-service -->
-					</div>
-					<div class="col-sm-4">
-						<div class="big-rectangle">
-							<img src="assets/img/john-logo.png" alt="">
-						</div><!-- /.big-rectangle -->
-					</div>
-					<div class="col-sm-4">
-                        <div class="main-service text-left">
-                            <div class="rectangle">
-                                <i class="fa fa-check" aria-hidden="true"></i>
-                            </div>
-                            <h3>Quality Control</h3>
-                            <p>We test out everything to make sure that your project is fully functional, cross–browser compatible and meets your specifications.</p>
-                        </div><!-- /.main-service -->
-						<div class="main-service text-left">
-							<div class="rectangle">
-								<i class="fa fa-list" aria-hidden="true"></i>
-							</div><!-- /.rectangle -->
-							<h3>Pixel Perfect</h3>
-							<p>We develop meaningful digital products and experiences that matter with design thinking and creative craftsmanship.</p>
-						</div><!-- /.main-service -->
-					</div>
-				</div>
+			<div class="input-group md-form form-sm form-2 pl-0">
+			  <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+			  <div class="input-group-append">
+			    <button class="input-group-text red lighten-3" id="basic-text1">
+			    	<span class="lnr lnr-magnifier"></span>
+			    </button>
+			  </div>
 			</div>
-		</section><!-- /.section-hello -->
-        <!-- End Hello section -->
 
-        <!-- Quote section -->
-		<section class="section-background section-quote background-overlay text-center">
-			<div class="container">
-				<p>We make our <span>work look good</span> &amp; have experience in the creation of brand identities for <span>print &amp; web</span>, with a difference.</p>
-			</div>
-		</section><!-- /.section-quote -->
-        <!-- End Quote section -->
-
-        <!-- About section -->
-        <section class="site-section section-about text-center" id="about">
-            <div class="container">
-                <h2>ABOUT John WORK</h2>
-                <p class="section-subtitle"><span>Our goal is to build products and services</span></p>
-                <div class="row">
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-laptop" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>Web design</h3>
-                            <p>Our approach to website design is to create a website that strengthens your company’s brand while ensuring ease of use and simplicity for your audience</p>
-                        </div><!-- /.feature-about -->
-                    </div>                    
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-code" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>Web development</h3>
-                            <p>The web development process involves taking the graphical elements defined in the design process and coding them into a custom theme.</p>
-                        </div><!-- /.feature-about -->
-                    </div>                    
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-search" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>SEO OPTIMIZATION</h3>
-                            <p>Go farther than you thought you could. With us you can go farther then ever before. Be in top results of searches.</p>
-                        </div><!-- /.feature-about -->
-                    </div>                    
-                    <div class="col-sm-3 col-xs-6">
-                        <div class="feature-about">
-                            <div class="medium-rectangle rectangle">
-                                <i class="fa fa-twitter" aria-hidden="true"></i>
-                            </div><!-- /.rectangle -->
-                            <h3>SOCIAL MEDIA</h3>
-                            <p>It's important to keep your brand consistent and recognizable across all platforms</p>
-                        </div><!-- /.feature-about -->
+		</form>
+	</div>
+	
+</div>	<div class="jumbotron d-flex align-items-center">
+  <div class="container text-center">
+    <h1 class="display-1 mb-4">RO<br>XY</h1>
+  </div>
+  <div class="rectangle-1"></div>
+  <div class="rectangle-2"></div>
+  <div class="rectangle-transparent-1"></div>
+  <div class="rectangle-transparent-2"></div>
+  <div class="circle-1"></div>
+  <div class="circle-2"></div>
+  <div class="circle-3"></div>
+  <div class="triangle triangle-1">
+  	<img src="img/obj_triangle.png" alt="">
+  </div>
+  <div class="triangle triangle-2">
+  	<img src="img/obj_triangle.png" alt="">
+  </div>
+  <div class="triangle triangle-3">
+  	<img src="img/obj_triangle.png" alt="">
+  </div>
+  <div class="triangle triangle-4">
+  	<img src="img/obj_triangle.png" alt="">
+  </div>
+</div>	<!-- Features Section-->
+<section id="features" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    A template built by <a href="https://gettemplates.co" target="_blank">GetTemplates.co</a>
+                </h2>
+                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Features Holder-->
+                <div class="col-md-10 offset-md-1 features-holder">
+                    <div class="row">
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center mt-4">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-cog fs-40"></i>
+                                </div>
+                                <h4>Easy to Customize</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-frame-contract fs-40"></i>
+                                </div>
+                                <h4>Pixel Perfect</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-bubble fs-40"></i>
+                                </div>
+                                <h4>Full Support</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-magic-wand fs-40"></i>
+                                </div>
+                                <h4>Clean Design</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center mt-4">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-clock fs-40"></i>
+                                </div>
+                                <h4>Ontime Project</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="lnr lnr-thumbs-up fs-40"></i>
+                                </div>
+                                <h4>Built with SASS</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
                     </div>
                 </div>
+                <!-- End of Features Holder-->
             </div>
-        </section><!-- /.section-about -->
-        <!-- End About section -->
+        </div>
+    </div>
+</section>
+<!-- End of Features Section-->	<section id="section-featurettes" class="featurettes overlay bg-fixed" style="background-image: url(img/bg.jpg);">
 
-        <!-- Skills section -->
-        <section class="site-section section-skills">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h2>Introduction video</h2>
-                        <iframe src="https://player.vimeo.com/video/158928871" width="100%" height="280" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                    </div>
-                    <div class="col-sm-6">
-                        <h2>SKILLS WE GOT</h2>
-                        <div class="progress-group">
-                            <p>Web design</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100">
-                                </div>
-                            </div><!-- /.progress -->
-                        </div><!-- /.progress-group -->
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center text-white">
 
-                        <div class="progress-group">
-                            <p>Web development</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100">
-                                </div>
-                            </div><!-- /.progress -->
-                        </div><!-- /.progress-group -->
+                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="fade-right">
+                            <h4 class="mb-4">Capture every moments and share it to all your friends</h4>
+                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
+                            <button type="button" class="btn btn-outline-primary">FEATURES</button>
+                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
 
-                        <div class="progress-group">
-                            <p>Mobile Development</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="95">
-                                </div>
-                            </div><!-- /.progress -->
-                        </div><!-- /.progress-group -->
+                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="flip-right">
+                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
+                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
 
-                        <div class="progress-group">
-                            <p>SEO optimization</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="100">
-                                </div>
-                            </div><!-- /.progress -->
-                        </div><!-- /.progress-group -->
+                    </div><!--/ .featurettes-item -->
 
-                        <div class="progress-group">
-                            <p>Social Media</p>
+                </div><!--/ .col-md-12 -->
+
+            </div><!--/ .row -->
+        </div>
+    </div><!--/ .container -->
+
+</section>	<section id="section-featurettes" class="featurettes">
+
+    <div class="container">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 offset-md-2 col-sm-6" data-aos="flip-left">
+                            <img class="my-5" src="img/app-profile-mockup.png" alt="">
+                        </div><!--/ .col-md-4.col-md-offset-right-2.col-sm-6 -->
+
+                        <div class="col-md-4 offset-md-right-2 col-sm-6" data-aos="fade-left">
+                            <h4 class="mb-4">Capture every moments and share it to all your friends</h4>
+                            <p>Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet.</p>
+                            <div class="progress mb-3">
+                                <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">HTML5 95%</div>
+                            </div>
                             <div class="progress">
-                                <div class="progress-bar" role="progressbar" data-transitiongoal="90">
-                                </div>
-                            </div><!-- /.progress -->
-                        </div><!-- /.progress-group -->
-                    </div>
-                </div>
+                                <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">CSS3 90%</div>
+                            </div>
+                        </div><!--/ .col-md-4.col-md-offset-2.col-sm-6 -->
+
+                    </div><!--/ .featurettes-item -->
+
+                </div><!--/ .col-md-12 -->
+
+            </div><!--/ .row -->
+        </div>
+    </div><!--/ .container -->
+
+</section>	<!-- Testimonial Section-->
+<section id="testimonial" class="section-padding bg-fixed bg-white overlay" style="background-image: url(img/bg-white.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="heading-section text-center">
+                <h2>
+                    User Testimonials
+                </h2>
             </div>
-        </section><!-- /.section-skills -->
-        <!-- End Skills section -->
-
-        <!-- Counters section -->
-        <section class="site-section section-counters text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-2 col-xs-6 col-sm-offset-1">
-                        <div class="counter">
-                            <div class="rectangle medium-rectangle ">
-                                <i class="fa fa-rocket" aria-hidden="true"></i>
-                                <span class="counter-start" data-to="167" data-speed="2000">167</span>
-                            </div><!-- /.rectangle -->
-                            <p>Projects Launched</p>
-                        </div><!-- /.counter -->
-                    </div>
-                    <div class="col-sm-2 col-xs-6">
-                        <div class="counter">
-                            <div class="rectangle medium-rectangle ">
-                                <i class="fa fa-trophy" aria-hidden="true"></i>
-                                <span class="counter-start" data-to="25" data-speed="2000">25</span>
-                            </div><!-- /.rectangle -->
-                             <p>Awards won</p>
-                        </div><!-- /.counter -->
-                    </div>                    
-                    <div class="col-sm-2 col-xs-6">
-                        <div class="counter">
-                            <div class="rectangle medium-rectangle ">
-                                <i class="fa fa-paper-plane" aria-hidden="true"></i>
-                                <span class="counter-start" data-to="98" data-speed="2000">98</span>
-                            </div><!-- /.rectangle -->
-                             <p>Proposals Sent</p>
-                        </div><!-- /.counter -->
-                    </div>                    
-                    <div class="col-sm-2 col-xs-6">
-                        <div class="counter">
-                            <div class="rectangle medium-rectangle ">
-                                <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                <span class="counter-start" data-to="945" data-speed="2000">945</span>
-                            </div><!-- /.rectangle -->
-                             <p>Hours of work</p>
-                        </div><!-- /.counter -->
-                    </div>                    
-                    <div class="col-sm-2 col-xs-12">
-                        <div class="counter">
-                            <div class="rectangle medium-rectangle ">
-                                <i class="fa fa-coffee" aria-hidden="true"></i>
-                                <span class="counter-start" data-to="256" data-speed="2000">256</span>
-                            </div><!-- /.rectangle -->
-                             <p>Cups of coffee</p>
-                        </div><!-- /.counter -->
-                    </div>
-                </div>
-
-            </div>
-        </section><!-- /.section-counters -->
-        <!-- End Counters section -->
-
-        <!-- Services section -->
-        <section class="site-section section-services" id="services">
-
-            <div class="container-fluid">
-                <h2>SERVICES WE OFFER</h2>
-                <p class="section-subtitle"><span>Exceptional level of service</span></p>
-            </div>
-
-            <div class="container">
-
-                <div class="carousel slide" id="services-carousel">
-
-                    <div class="item-controls text-center">
-                        <a href="#services-carousel" class="left btn carousel-control" data-slide="prev"><i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </a>
-                        <a href="#services-carousel" class="right btn carousel-control" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                    </div><!-- /.item-controls -->
-
-                    <div class="carousel-indicators nav-tabs text-center">
-                        <a data-target="#services-carousel" href="#" data-slide-to="0" class="active">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-laptop" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">Web design</p>
-                                </div>
+            <div class="row">
+                <!-- Testimonial -->
+                <div class="testi-content testi-carousel owl-carousel">
+                    <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text"><b>ROXY</b> is best theme i used so far.<br> It’s ideal for guys without coding knowledge like me!</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            <div class="testi-img mr-2">
+                                <img src="img/testi-1.jpg" alt="">
                             </div>
-                        </a><!-- /.item -->
-                        <a data-target="#services-carousel" href="#" data-slide-to="1">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-code" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">Web development</p>
-                                </div>
+                            <div class="testi-details">
+                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
+                                <p class="testi-desc mb-0">Web Designer</p>
                             </div>
-                        </a><!-- /.item -->
-                        <a data-target="#services-carousel" href="#" data-slide-to="2">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-mobile" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">Mobile Development</p>
-                                </div>
-                            </div>
-                        </a><!-- /.item -->
-                        <a data-target="#services-carousel" href="#" data-slide-to="3">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-search" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">SEO optimization</p>
-                                </div>
-                            </div>
-                        </a><!-- /.item -->
-                        <a data-target="#services-carousel" href="#" data-slide-to="4">
-                            <div class="col-xs-4 col-sm-fifth">
-                                <div class="service">
-                                    <div class="rectangle">
-                                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                                    </div>
-                                    <p class="hidden-xs">Social Media</p>
-                                </div>
-                            </div>
-                        </a><!-- /.item -->
-                    </div><!-- /.carousel-indicators -->
+                        </div>
                         
-                           
-                    <div class="carousel-inner">
-                        <!-- Item 1 -->   
-                        <div id="item1" class="item tab-pane active">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">Web Design</h3>
-                                        <p>Decorations don’t drive home messages. Content does. Reducing text-based content to a visual design element (the shape of the text) can result in bloated and unrealistic client expectations once real data replaces the dummy content. We allow our design decisions to be dictated by the on-page content and messaging, and often our designers use the actual content to inspire interesting elements that might not have been conceived without it</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/web-design.jpg" class="img-responsive" alt="">
-                                </div>
+                    </div>
+                    <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            <div class="testi-img mr-2">
+                                <img src="img/testi-1.jpg" alt="">
                             </div>
-                        </div><!-- /.item -->
-                        <!-- Item 2 -->   
-                        <div id="item2" class="item tab-pane">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">Web Development</h3>
-                                        <p>Once we have come up with a unique design and have finalized the textures and graphics to be added, the next step is to make it all come together. And that is what we aim to achieve at our web development agency India. Only a professionally designed website can justify the uniqueness of your idea and this is a fact clearly understood by our team. </p>
-
-                                        <p>While a good design can impress the users, it is the codes and development process that ensures that your target users will find the browsing experience equally amazing as your design. </p>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/web-development.jpg" class="img-responsive" alt="">
-                                </div>
+                            <div class="testi-details">
+                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
+                                <p class="testi-desc mb-0">Web Designer</p>
                             </div>
-                        </div><!-- /.item -->
-                        <!-- Item 3 -->   
-                        <div id="item3" class="item tab-pane">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">Mobile Development</h3>
-                                        <p>With an increasing importance being given to smart phones, and mobile apps, it has become immensely important to include app development as part of web design services. Our team is known to provide excellent and extraordinary apps that are unique in every way. All the apps developed by our team are based on providing interesting features combined with enhanced functionality. With a mobile app in place, you can increase the reach of your brand and broaden its horizons too. You can have an easy to use professional app created that provides ease of functionality and an amazing appeal.</p>                                     
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/mobile-development.jpg" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div><!-- /.item -->
-                        <!-- Item 4 -->   
-                        <div id="item4" class="item tab-pane">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">SEO optimization</h3>
-                                        <p>Search engine optimization (SEO) is the process of improving the visibility of a web site in search engines. Consumer puts a lot of trust in search engines to find what they need. Google receives 34,000 searches per second. Those searches involve finding products, reviewing brands, and looking up business locations.</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/seo-optimization.jpg" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div><!-- /.item -->
-                        <!-- Item 5 -->   
-                        <div id="item5" class="item tab-pane">
-                            <div class="row">
-                                <div class="col-md-5">
-                                    <div class="service-info">
-                                        <h3 class="service-title">Social Media</h3>
-                                        <p>Social Media, has become an essential tool of marketing an online business. It gives you a platform to interact and inform people about yourself and your brand. The concept of social media basically refers to the task of promoting websites or business through social media platforms..</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-7">
-                                    <img src="assets/img/social-media.jpg" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                        </div><!-- /.item -->
-                    </div><!-- /.carousel-inner -->
-                </div><!-- /.carousel -->
-            </div>
-        </section><!-- /.section-services -->
-        <!-- End Services section -->
-
-        <!-- Reviews section -->
-        <section class="site-section section-reviews text-center">
-            <div class="container">
-                <h2>Client Reviews</h2>
-                <p class="section-subtitle"><span>OUR CLIENTS LOVE US! READ WHAT THEY HAVE TO SAY</span></p>
-            </div>
-
-            <div class="blue-bg">
-                <div class="container">
-                    <div class="review-carousel">
-                        <!-- Review 1 -->
-                        <div class="review">
-                            <div class="rectangle">
-                                <img src="assets/img/review.jpg" class="img-res" alt="">
-                            </div>
-                            <p>If there were 100 star rating I would leave 110. I have been building WP sites now full time for 7 years and in business for 12 and have never worked with such a solid company with such a wonderful set of themes.</p>
-                            <div class="review-author">
-                                <h3>Mike Taylor</h3>
-                                <p>CEO at Sports Portal</p>
-                            </div><!-- /.review-author -->
-                        </div><!-- /.review -->
-                        <!-- Review 2 -->
-                        <div class="review">
-                            <div class="rectangle">
-                                <img src="assets/img/review-2.jpg" class="img-res" alt="">
-                            </div>
-                            <p>Diana Johnson is a rare SEO consultant who does things the right way. I’ve been consistently impressed with her process, organization and strategic method of doing SEO the right way.</p>
-                            <div class="review-author">
-                                <h3>Anna Murray</h3>
-                                <p>CEO at Law firm</p>
-                            </div><!-- /.review-author -->
-                        </div><!-- /.review -->
-                    </div><!-- /.review-carousel -->
-                </div>
-            </div>
-        </section><!-- /.section-reviews -->
-        <!-- End Reviews section -->
-
-        <!-- Team section -->
-        <section class="site-section section-team" id="team">
-            <div class="container">
-                <h2>MEET MY TEAM</h2>
-                <p class="section-subtitle"><span>This is the team that is working with me</span></p>
-                
-                <div class="team">
-                    <div class="row">   
-                        <!-- Team Member --> 
-                        <div class="col-md-3 col-xs-6">
-                            <div class="team-member">
-                                <div class="flipper">
-                                    <div class="team-member-front">
-                                        <div class="team-member-thumb">
-                                            <img src="assets/img/employee-1.jpg" class="img-res" alt="">
-                                        </div>  <!-- /.team-member-thumb -->
-                                        <p class="team-member-front-name">DIANA JOHNSON</p>
-                                    </div><!-- /.team-member-front -->
-                                    <div class="team-member-back">
-                                        <div class="team-member-info">
-                                            <h3 class="team-member-back-name">DIANA JOHNSON</h3>
-                                            <p class="team-member-back-position">Web Designer</p>
-                                            <p class="team-member-back-info">Curabitur nulla odio bibendum sit amet facilisis sed lobortis id, just Donec ollic itudin facil isis nulla. Donec eget ligula. </p>
-                                            <div class="social-icons small">
-                                                <a href="#" class="rectangle"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-twitter"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-dribbble"></i></a>
-                                            </div>
-                                        </div><!-- /.team-member-back-info -->
-                                    </div><!-- /.team-member-back -->  
-                                </div>         
-                            </div><!-- /.team-member -->       
-                        </div>
-                        <!-- Team Member --> 
-                        <div class="col-md-3 col-xs-6">
-                            <div class="team-member">
-                                <div class="flipper">
-                                    <div class="team-member-front">
-                                        <div class="team-member-thumb">
-                                            <img src="assets/img/employee-2.jpg" class="img-res" alt="">
-                                        </div>  <!-- /.team-member-thumb -->
-                                        <p class="team-member-front-name">ADAM HENRY</p>
-                                    </div><!-- /.team-member-front -->
-                                    <div class="team-member-back">
-                                        <div class="team-member-info">
-                                            <h3 class="team-member-back-name">ADAM HENRY</h3>
-                                            <p class="team-member-back-position">Web Developer</p>
-                                            <p class="team-member-back-info">Curabitur nulla odio bibendum sit amet facilisis sed lobortis id, just Donec ollic itudin facil isis nulla. Donec eget ligula. </p>
-                                            <div class="social-icons small">
-                                                <a href="#" class="rectangle"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-twitter"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-dribbble"></i></a>
-                                            </div>
-                                        </div><!-- /.team-member-back-info -->
-                                    </div><!-- /.team-member-back -->  
-                                </div>         
-                            </div><!-- /.team-member -->       
-                        </div>
-                        <!-- Team Member --> 
-                        <div class="col-md-3 col-xs-6">
-                            <div class="team-member">
-                                <div class="flipper">
-                                    <div class="team-member-front">
-                                        <div class="team-member-thumb">
-                                            <img src="assets/img/employee-3.jpg" class="img-res" alt="">
-                                        </div>  <!-- /.team-member-thumb -->
-                                        <p class="team-member-front-name">ROBERT DOE</p>
-                                    </div><!-- /.team-member-front -->
-                                    <div class="team-member-back">
-                                        <div class="team-member-info">
-                                            <h3 class="team-member-back-name">ROBERT DOE</h3>
-                                            <p class="team-member-back-position">Mobile APP Developer</p>
-                                            <p class="team-member-back-info">Curabitur nulla odio bibendum sit amet facilisis sed lobortis id, just Donec ollic itudin facil isis nulla. Donec eget ligula. </p>
-                                            <div class="social-icons small">
-                                                <a href="#" class="rectangle"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-twitter"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-dribbble"></i></a>
-                                            </div>
-                                        </div><!-- /.team-member-back-info -->
-                                    </div><!-- /.team-member-back -->  
-                                </div>         
-                            </div><!-- /.team-member -->       
-                        </div>
-                        <!-- Team Member --> 
-                        <div class="col-md-3 col-xs-6">
-                            <div class="team-member">
-                                <div class="flipper">
-                                    <div class="team-member-front">
-                                        <div class="team-member-thumb">
-                                            <img src="assets/img/employee-4.jpg" class="img-res" alt="">
-                                        </div>  <!-- /.team-member-thumb -->
-                                        <p class="team-member-front-name">JULIA BROWN</p>
-                                    </div><!-- /.team-member-front -->
-                                    <div class="team-member-back">
-                                        <div class="team-member-info">
-                                            <h3 class="team-member-back-name">JULIA BROWN</h3>
-                                            <p class="team-member-back-position">Seo Specialist</p>
-                                            <p class="team-member-back-info">Curabitur nulla odio bibendum sit amet facilisis sed lobortis id, just Donec ollic itudin facil isis nulla. Donec eget ligula. </p>
-                                            <div class="social-icons small">
-                                                <a href="#" class="rectangle"><i class="fa fa-facebook"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-twitter"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-linkedin"></i></a>
-                                                <a href="#" class="rectangle"><i class="fa fa-dribbble"></i></a>
-                                            </div>
-                                        </div><!-- /.team-member-back-info -->
-                                    </div><!-- /.team-member-back -->  
-                                </div>         
-                            </div><!-- /.team-member -->       
                         </div>
                     </div>
-                </div><!-- /.team -->   
+                     <div class="testi-item text-center">
+                        <i class="testi-icon fa fa-3x fa-quote-left"></i>
+                        <h4 class="testi-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci <br> non doloribus ut, alias doloremque perspiciatis.</h4>
+                        <div class="testi-meta-inner d-flex justify-content-center align-items-center">
+                            <div class="testi-img mr-2">
+                                <img src="img/testi-1.jpg" alt="">
+                            </div>
+                            <div class="testi-details">
+                                <p class="testi-author mb-0 font-weight-bolder">John Doe</p>
+                                <p class="testi-desc mb-0">Web Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of Testimonial -->
             </div>
-        </section><!-- /.section-team -->
-        <!-- End Team section -->
-
-        <!-- History section --> 
-        <section class="section-history" id="history">
-            <div class="container">          
-                <div class="text-center section-diff-title">     
-                    <h2>A Look Back At Our History</h2>
-                    <p>This my Education and Experience</p>
-                </div> 
-                <!-- Timeline --> 
-                <ul class="timeline">
-                    <!-- Timeline badge --> 
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2016</span></div>
-                    </li><!-- /.timeline-start -->
-
-                    <!-- Timeline job & description  --> 
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>13 sep</p>
-                                </div><!-- /.timeline-date -->
-                                <div class="timeline-position">
-                                    <p>Web design &amp; Development</p>
-                                </div><!-- /.timeline-position -->
-                            </div><!-- /.timeline-heading -->
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/img/timeline-img.jpg" class="img-res" alt="">
-                                </div><!-- /.timeline-body-thumb -->
-                                <p>Designing and developing a Wordpress Website</p>
-                            </div><!-- /.timeline-body -->
-                        </div><!-- /.timeline-panel -->
-                    </li>
-
-                    <!-- Timeline badge --> 
-                    <li class="timeline-start">
-                        <div class="rectangle"><span>2017</span></div>
-                    </li><!-- /.timeline-start -->
-
-                    <!-- Timeline job & description, inverted  --> 
-                    <li class="timeline-inverted">
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                               <div class="timeline-position">
-                                    <p>Web Design</p>
-                                </div><!-- /.timeline-position -->
-                                <div class="timeline-date">
-                                    <p>5 Jan</p>
-                                </div><!-- /.timeline-date -->
-                            </div><!-- /.timeline-heading -->
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/img/timeline-img.jpg" class="img-res" alt="">
-                                </div><!-- /.timeline-body-thumb -->
-                                <p>Designing a solution for mobile app</p>
-                            </div><!-- /.timeline-body -->
-                        </div><!-- /.timeline-panel -->
-                    </li><!-- /.timeline-inverted -->
-
-                    <!-- Timeline job & description  --> 
-                    <li>
-                        <div class="rectangle timeline-rectangle"></div>
-                        <div class="timeline-panel">
-                            <div class="timeline-heading">
-                                <div class="timeline-date">
-                                    <p>25 Aug</p>
-                                </div><!-- /.timeline-date -->
-                                <div class="timeline-position">
-                                    <p>Seo Optimization</p>
-                                </div><!-- /.timeline-position -->
-                            </div><!-- /.timeline-heading -->
-                            <div class="timeline-body">
-                                <div class="timeline-body-thumb">
-                                    <img src="assets/img/timeline-img.jpg" class="img-res" alt="">
-                                </div><!-- /.timeline-body-thumb -->
-                                <p>SEO optimizing a couple of websites</p>
-                            </div><!-- /.timeline-body -->
-                        </div><!-- /.timeline-panel -->
-                    </li>
-
-                    <!-- Timeline Badge  --> 
-                    <li class="timeline-end">
-                        <div class="rectangle"><span>More</span></div>
-                    </li><!-- /.timeline-end -->
-                </ul><!-- /.timeline -->
+        </div>
+    </div>
+</section>
+<!-- End of Testimonial Section-->	<!-- Portfolio Section -->
+<section id="portfolio" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap">
+                <h2 class="section-title">Our <b>Awesome</b> Works</h2>
+                <p class="section-sub-title">Praesent commodo cursus magna, vel scelerisque nisl consectetur et. <br> pharetra augue. Donec id elit non mi.</p>
             </div>
-        </section><!-- /.section-history -->
-        <!-- End History section --> 
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Portfolio Holder -->
+                <div class="col-md-12 portfolio-holder mt-3">
+                    <!-- Btn Filter -->
+                    <div class="filter-button-group btn-filter d-flex justify-content-center">
+                        <a tabindex="0" class="is-checked" data-filter="*">Show All</a>
+                        <a tabindex="0" data-filter=".minimalism">Minimalism</a>
+                        <a tabindex="0" data-filter=".vintage">Vintage</a>
+                        <a tabindex="0" data-filter=".creative">Creative</a>
+                    </div>
+                    <!-- End of Btn Filter -->
+                    <!-- Portfolio Content -->
+                    <div class="grid-portfolio">
+                        <div class="grid-sizer"></div>
+                        <div class="gutter-sizer"></div>
+                        <!-- Portfolio Item -->
+                        <div class="grid-item minimalism" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/photo-1.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/photo-1.jpg" title="Photo-1">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Camera</h4>
+                                    </div>
+                                </div>
 
-        <!-- Portfolio/Works section --> 
-        <section class="site-section section-works" id="works">
-            <div class="container">
-                <h2>RECENT WORKS</h2>
-                <p class="section-subtitle"><span>OUR CLIENTS LOVE US! READ WHAT THEY HAVE TO SAY</span></p>
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item vintage" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/photo-6.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/photo-6.jpg" title="Ship">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Flower</h4>
+                                    </div>
+                                </div>
 
-                <div class="portfolio">
-                    <ul class="portfolio-sorting list-inline">
-                        <li><a href="#" class=" active" data-group="all">all</a></li>
-                        <li><a href="#" class="" data-group="webdesign">Web Design</a></li>
-                        <li><a href="#" class="" data-group="webdev">Web Development</a></li>
-                        <li><a href="#" class="" data-group="mobileapps">Mobile apps</a></li>
-                    </ul><!-- /.portfolio-sorting  -->
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative grid-item-height" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/photo-2.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/photo-2.jpg" title="Tracy Portrait">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Breakfast</h4>
+                                    </div>
+                                </div>
 
-                    <div id="grid">
-                        
-                        <!-- Portfolio item --> 
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-1.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem1">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>PSD Template</h3>
-                                    <p>Web Design</p>
-                                </div><!-- /.portfolio-info  -->
                             </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-2.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem2">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Website</h3>
-                                    <p>Web Development</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["mobileapps"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-4.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem3">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>IOS App</h3>
-                                    <p>Mobile App</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-3.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem4">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>PSD Template</h3>
-                                    <p>Web Design</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-5.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem5">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Wordpress Website</h3>
-                                    <p>Web Development</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["mobileapps"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-6.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem6">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Android App</h3>
-                                    <p>Mobile App</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-7.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem7">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>Woocommerce Website</h3>
-                                    <p>Web Development</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
-                        <!-- Portfolio item -->
-                        <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
-                            <div class="portfolio-item">
-                                <div class="portfolio-item-thumb">
-                                    <img src="assets/img/portfolio-8.jpg" alt="" class="img-res">
-                                    <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem8">
-                                        <i class="fa fa-plus"></i>
-                                    </a>
-                                </div><!-- /.portfolio-item-thumb  -->
-                                <div class="portfolio-info">
-                                    <h3>PSD Template</h3>
-                                    <p>Web Design</p>
-                                </div><!-- /.portfolio-info  -->
-                            </div>
-                        </div><!-- /.col-md-3  -->
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/photo-7.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/photo-7.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Chair</h4>
+                                    </div>
+                                </div>
 
-                    </div><!-- /#grid -->
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item vintage" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/photo-4.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/photo-4.jpg" title="Bookself">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Hidden Book</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                        <!-- Portfolio Item -->
+                        <div class="grid-item creative" data-aos="fade-up">
+                            <div class="grid-item-wrapper">
+                                <img src="img/photo-9.jpg" alt="portfolio-img" class="portfolio-item">
+                                <div class="grid-info">
+                                    <div class="grid-link d-flex justify-content-center">
+                                        <a class="img-pop" data-rel="lightcase" href="img/photo-9.jpg" title="Guitar">
+                                            <span class="lnr lnr-move"></span>
+                                        </a>
+                                        <a class="ext-link" href="https://unsplash.com/" target="_blank">
+                                            <span class="lnr lnr-link"></span>
+                                        </a>
+                                    </div>
+                                    <div class="grid-title">
+                                        <h4>Red</h4>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End of Portfolio Item -->
+                    </div>
+                    <!-- End of Portfolio Content -->
+                </div>
+                <!-- End of Portfolio Holder -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Portfolio Section -->	<!-- Client Section -->
+<section id="client" class="overlay bg-fixed" style="background-image: url(img/bg.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="row ">
+                <div class="col-md-12">
+                    <!-- Section Title -->
+                    <div class="title-wrap mb-5">
+                        <h2>Who love to <span> work</span> with us</h2>
+                    </div>
+                    <!-- End of Section Title -->
+                </div>
+                <!-- Client Holder -->
+                <div class="col-md-12 client-holder">
+                    <div class="client-slider owl-carousel">
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/client.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/client.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/client.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/client.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/client.png" alt=" ">
+                        </div>
+                        <div class="client-item">
+                            <img class="img-responsive" src="img/client.png" alt=" ">
+                        </div>
+                    </div>
+                    <!-- End of Client Holder -->
                 </div>
             </div>
-        </section><!-- /.section-works -->
-        <!-- End Works section --> 
-
-        <!-- Me section --> 
-        <section class="section-background section-me background-overlay text-center">
-            <div class="container page-scroll">
-                <h2>Are You Impressed By My Work?</h2>
-                <p>Durabitur commodo ras non urna mauris mollis auctor proin laoreet</p>
-                <a href="#contact" class="btn">GET IN TOUCH</a>
-            </div>
-        </section><!-- /.section-me -->
-        <!-- End Me section --> 
-
-        <!-- Clients section --> 
-        <section class="section-clients">
-            <div class="container">
-                <div class="text-center section-diff-title">     
-                    <h2>Clients I’ve Worked So Far</h2>
-                    <p></p>
-                </div> 
-
-                <div class="clients-carousel">
-                    <!-- Client --> 
-                    <a href="#" class="client">
-                        <img src="assets/img/client-1.png" class="img-responsive" alt="">
-                    </a><!-- /.client -->                    
-                    <!-- Client -->
-                    <a href="#" class="client">
-                        <img src="assets/img/client-2.png" class="img-responsive" alt="">
-                    </a><!-- /.client -->                    
-                    <!-- Client -->
-                    <a href="#" class="client">
-                        <img src="assets/img/client-3.png" class="img-responsive" alt="">
-                    </a><!-- /.client -->                    
-                    <!-- Client -->
-                    <a href="#" class="client">
-                        <img src="assets/img/client-4.png" class="img-responsive" alt="">
-                    </a><!-- /.client -->                    
-                    <!-- Client -->
-                    <a href="#" class="client">
-                        <img src="assets/img/client-5.png" class="img-responsive" alt="">
-                    </a><!-- /.client -->                    
-                    <!-- Client -->
-                    <a href="#" class="client">
-                        <img src="assets/img/client-3.png" class="img-responsive" alt="">
-                    </a><!-- /.client -->
-                </div><!-- /.clients-carousel -->
-            </div>
-        </section><!-- /.section-clients -->
-        <!-- End Clients section --> 
-
-        <!-- Twitter section --> 
-        <section class="section-background section-twitter background-overlay text-center">
-            <div class="container">
-                <div class="rectangle">
-                    <i class="fa fa-twitter"></i>
-                </div>
-                <p>Latest from Twtter</p>
-                <p>So here’s how you can integrate sign up and sign in for your web and iOS apps, with AWS Cognito.</p>
-                <a href="#" class="btn btn-inverted">follow me</a>
-            </div>
-        </section><!-- /.section-twitter-->
-        <!-- End Twitter section --> 
-
-        <!-- Contacts section --> 
-        <section class="site-section section-contact" id="contact">
-            <div class="container">
-                <h2>CONTACT MiKE</h2>
-                <p class="section-subtitle"><span>Here i am</span></p>
-                <div class="row">
-                    <form>
-                        <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="Name" required>
+        </div>
+</section>
+<!-- End of Client Section -->	<!-- Reservation Section -->
+<section id="reservation" class="bg-white section-content">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-5 offset-lg-1 mb-5 mb-lg-0" data-aos="fade-right">
+                <div class="bg-white p-5 shadow">
+                    <div class="heading-section text-center">
+                        <h2 class="mb-4">
+                            Contact Us
+                        </h2>
+                    </div>
+                    <form method="post" name="contact-us" action="">
+                        <div class="row">
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Email">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="number" class="form-control" id="phoneNumber" name="phoneNumber" placeholder="Phone">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <input type="text" class="form-control" id="websiteUrl" name="websiteUrl" placeholder="Website">
+                            </div>
+                            <div class="col-md-12 form-group">
+                                <textarea class="form-control" id="message" name="message" rows="6" placeholder="Your Message ..."></textarea>
+                            </div>
+                            <div class="col-md-12 text-center">
+                                <button class="btn btn-primary btn-shadow btn-lg" type="submit" name="submit">Send Message</button>
+                            </div>
                         </div>
-                        <div class="col-md-4">
-                            <input class="form-control" type="email" placeholder="Email" required>
-                        </div>
-                        <div class="col-md-4">
-                            <input class="form-control" type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="col-sm-12">
-                            <textarea class="form-control" placeholder="Your Message"  required></textarea>
-                        </div>
-
-                        <div class="col-sm-12">
-                            <button class="btn btn-inverted">Send Message</button>
-                        </div>  
                     </form>
                 </div>
             </div>
-        </section><!-- /.section-contact-->
-        <!-- End Contacts section --> 
+            <div class="col-lg-4 offset-lg-1" data-aos="fade-left">
+                <h2 class="mb-4">
+                    Best solution to create any website. Pay once.
+                </h2>
+                <p class="mb-4">I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+
+                <ul class="list-inline py-2">
+                    <li class="list-inline-item text-center">
+                        <span class="lnr fs-40 lnr-rocket"></span>
+                        <p>Fast delivery</p>
+                    </li>
+                    <li class="list-inline-item text-center">
+                        <span class="lnr fs-40 lnr-magic-wand"></span>
+                        <p>Awesome design</p>
+                    </li>
+                    <li class="list-inline-item text-center">
+                        <span class="lnr fs-40 lnr-cog"></span>
+                        <p>Easy to customize</p>
+                    </li>
+                </ul>
+
+                <a href="#" class="btn btn-link p-0">
+                    <span>PURCHASE NOW</span>
+                    <span class="lnr lnr-arrow-right"></span>
+                </a>
+            </div>
+        </div>
         
-        <!-- Social Networks section --> 
-        <section class="section-networks blue-bg">
-            <div class="container">
-                <a href="#" class="rectangle">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a href="#" class="rectangle">
-                    <i class="fa fa-instagram"></i>
-                </a>
-                <a href="#" class="rectangle">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#" class="rectangle">
-                    <i class="fa fa-youtube-play"></i>
-                </a>
-                <a href="#" class="rectangle">
-                    <i class="fa fa-envelope"></i>
-                </a>
-                <a href="#" class="rectangle">
-                    <i class="fa fa-dribbble"></i>
-                </a>
+    </div>
+</section>
+<!-- End of Reservation Section -->	<!-- Features Section-->
+<section id="cta" class="bg-fixed overlay" style="background-image: url(img/bg.jpg);">
+    <div class="container">
+        <div class="section-content" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2 class="mb-2">Make a beautiful website, or million of them</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam, veritatis qui eligendi delectus quia fuga!</p>
+                    <a class="btn btn-outline-primary btn-lg">FEATURES</a>
+                </div>
             </div>
-        </section><!-- /.section-networks-->
-        <!-- End Social Networks section --> 
-
-    </main><!-- /#main -->
-    <!-- End Main content -->
-
-    <!-- Footer --> 
-    <footer id="colophon" class="site-footer">
-
-        <div class="container-fluid">
-
-            <ul class="list-unstyled list-inline">
-                <li class="page-scroll"><a href="#top">Home</a></li>
-                <li class="page-scroll"><a href="#intro">Intro</a></li>
-                <li class="page-scroll"><a href="#about">About</a></li>
-                <li class="page-scroll"><a href="#services">Services</a></li>
-                <li class="page-scroll"><a href="#team">Team</a></li>
-                <li class="page-scroll"><a href="#history">History</a></li>
-                <li class="page-scroll"><a href="#works">Works</a></li>
-                <li class="page-scroll"><a href="#contact">Contact</a></li>
-            </ul>
-
-            <div class="page-scroll">
-                <a href="#top" class="rectangle">
-                    <i class="fa fa-angle-double-up"></i>
-                </a>
+        </div>
+    </div>
+</section>
+<!-- End of Features Section--></div>
+<footer class="mastfoot my-3">
+    <div class="inner container">
+         <div class="row">
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		
+         	</div>
+         	<div class="col-lg-4 col-md-12 d-flex align-items-center">
+         		<p class="mx-auto text-center mb-0">&copy; 2019 Roxy. Design by <a href="https://gettemplates.co" target="_blank">GetTemplates</a>.</p>
+         	</div>
+           
+            <div class="col-lg-4 col-md-12">
+            	<nav class="nav nav-mastfoot justify-content-center">
+	                <a class="nav-link" href="#">
+	                	<i class="fab fa-facebook-f"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="fab fa-twitter"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="fab fa-instagram"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="fab fa-linkedin"></i>
+	                </a>
+	                <a class="nav-link" href="#">
+	                	<i class="fab fa-youtube"></i>
+	                </a>
+	            </nav>
             </div>
-
+            
         </div>
-
-        <div class="container text-center">
-            <p class="copyright">&copy; <a href="http://pixelperfect.mk/" target="_blank">PixelPerfect</a> - 2017</p>
-        </div>
-
-    </footer><!-- /#footer -->
-    <!-- End Footer --> 
-
-    <!-- Modals -->
-    <div id="portfolioItem1" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-1.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem2" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-2.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem3" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-4.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem4" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-3.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem5" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-5.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem6" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-6.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem7" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-7.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <div id="portfolioItem8" class="modal fade fade-scale" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
-                    <img class="img-res" src="assets/img/portfolio-8.jpg" alt="">
-                </div>
-                <div class="modal-body">
-                    <h4 class="modal-title">Project title</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#" class="btn">Visit Page</a>
-                </div>
-            </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-    </div><!-- /.modal -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!-- jQuery core js | Do not Delete -->
-    <script src="assets/js/jquery.min.js"></script>
-
-    <!-- Bootstrap core js | Do not Delete -->
-    <script src="assets/js/bootstrap.min.js"></script>
-
-    <!-- Bootstrap progressbar JS -->
-    <script src="assets/js/bootstrap-progressbar.min.js"></script>
-
-    <!-- Count To JS -->
-    <script src="assets/js/jquery.countTo.min.js"></script>
-
-    <!-- Easing JS -->
-    <script src="assets/js/jquery.easing.min.js"></script>
-
-    <!-- Shuffle JS -->
-    <script src="assets/js/jquery.shuffle.min.js"></script>
-
-    <!-- Slick Carousel JS -->
-    <script src="assets/js/slick.min.js"></script>
-
-    <!-- Touchswipe JS -->
-    <script src="assets/js/touchswipe.min.js"></script>
-
-    <!-- Custom JS -->
-    <script src="assets/js/script.js"></script>
-  
+    </div>
+</footer>	<!-- External JS -->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+	<script src="vendor/bootstrap/popper.min.js"></script>
+	<script src="vendor/bootstrap/bootstrap.min.js"></script>
+	<script src="vendor/select2/select2.min.js "></script>
+	<script src="vendor/owlcarousel/owl.carousel.min.js"></script>
+	<script src="vendor/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="vendor/isotope/isotope.min.js"></script>
+	<script src="vendor/lightcase/lightcase.js"></script>
+	<script src="vendor/waypoints/waypoint.min.js"></script>
+	 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	 
+	<!-- Main JS -->
+	<script src="js/app.min.js "></script>
+	<script src="//localhost:35729/livereload.js"></script>
 </body>
 </html>
