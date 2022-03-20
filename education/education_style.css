@@ -63,4 +63,9 @@
     .marginSM {
         margin-top: 25px;
     }
+
+    .footer {
+        position: relative;
+        top: 25px;
+    }
 }

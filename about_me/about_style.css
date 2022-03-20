@@ -68,13 +68,42 @@ a{
     top: 30px;
 }
 
-@media screen and (max-width: 576px) {
+.aboutTitle {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 600;
+    position: relative;
+    /* top: -20px; */
+    text-align: center;
+}
+
+.aboutTitle::before {
+    content: "";
+    position: relative;
+    top: 60px;
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background: #ffb623;
+}
+
+.aboutMe {
+    padding: 20px;
+    width: 100%;
+    background-color: #52575d6b;
+    color: #fff;
+    position: relative;
+    top: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
     .asosiy {
-        height: 420px;
+        display: none !important;
     }
 
     .footer {
-        top: 0 !important;
+        display: none !important;
     }
 
     .gap {
