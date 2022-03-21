@@ -52,3 +52,35 @@
 a {
     text-decoration: none;
 }
+
+.folioBtn {
+    width: 120px !important;
+    height: 40px !important;
+    border: none;
+    text-transform: uppercase;
+    position: relative;
+    background: #fff !important;
+    color: #2c2e2f;
+    z-index: 1;
+}
+
+.folioBtn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    background: #ffb623;
+    border-radius: 4px !important;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: 300ms;
+    z-index: -1;
+}
+
+.folioBtn:hover::before {
+    transform: scaleX(1);
+    border-radius: 4px;
+}

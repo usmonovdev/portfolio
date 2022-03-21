@@ -67,7 +67,15 @@
 .folioThree {
     position: relative;
     top: 100px;
-    /* margin-bottom: 50px; */
+}
+
+.footer {
+    position: relative;
+    top: 180px;
+}
+
+.footer div p {
+    margin-top: 15px;
 }
 
 @media screen and (max-width: 992px) {
