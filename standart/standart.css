@@ -357,3 +357,7 @@ body {
 .navbar-ikonklar{
     text-align: center;
 }
+
+.photoShadow {
+    box-shadow: 0px 0px 30px #292a2b;
+}
