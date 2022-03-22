@@ -1,6 +1,4 @@
 .asosiy{
-    width: 550px;
-    height: 550px;
     text-align: center;
     position: relative;
     top: 40px;
@@ -8,9 +6,8 @@
 }
 
 .ozim{
-    border-radius: 300px 100px 300px 200px;
-    border: 4px solid #ffb623;
-    width: 60%;
+    width: 100%;
+    filter: contrast(1.1) brightness(1.1);
 }
 
 .chiziq-bir{
@@ -68,16 +65,15 @@ a{
     top: 30px;
 }
 
-.aboutTitle {
+.eduTitle {
     font-size: 30px;
     color: #fff;
     font-weight: 600;
     position: relative;
-    /* top: -20px; */
-    text-align: center;
+    top: -20px;
 }
 
-.aboutTitle::before {
+.eduTitle::before {
     content: "";
     position: relative;
     top: 60px;
@@ -99,11 +95,7 @@ a{
 
 @media screen and (max-width: 768px) {
     .asosiy {
-        display: none !important;
-    }
-
-    .footer {
-        display: none !important;
+        top: 0px !important;
     }
 
     .gap {
