@@ -84,14 +84,22 @@ a{
 }
 
 .aboutMe {
-    padding: 20px;
-    width: 100%;
-    background-color: #52575d6b;
     color: #fff;
     position: relative;
     top: 50px;
+    font-size: 26px;
 }
 
+.aboutQuestion {
+    font-size: 26px;
+    color: #ffb623;
+    font-weight: 600;
+}
+
+.footer div p{
+    position: relative;
+    top: 8px;
+}
 
 @media screen and (max-width: 768px) {
     .asosiy {
@@ -100,5 +108,16 @@ a{
 
     .gap {
         border-radius: 0;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .aboutMe {
+        padding: 0px !important;
+        font-size: 16px;
+    }
+
+    .aboutQuestion {
+        font-size: 16px;
     }
 }
