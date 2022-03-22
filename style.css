@@ -55,13 +55,14 @@ a {
 
 .folioBtn {
     width: 120px !important;
-    height: 40px !important;
+    height: 50px !important;
     border: none;
     text-transform: uppercase;
     position: relative;
     background: #fff !important;
     color: #2c2e2f;
     z-index: 1;
+    line-height: 35px;
 }
 
 .folioBtn::before {
