@@ -8,10 +8,6 @@ const renderCard = () => {
     })
 }
 
-setTimeout(() => {
+window.addEventListener("load", () => {
     renderCard()
-}, 10000);
-
-// window.addEventListener("load", () => {
-//     renderCard()
-// })
+})
