@@ -3,6 +3,10 @@ body {
     font-family: 'Lato';
 }
 
+* img {
+    pointer-events: none;
+}
+
 .background {
     position: fixed;
     width: 100vw;
